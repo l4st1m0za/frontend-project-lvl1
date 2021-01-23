@@ -1,0 +1,27 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "![Actions Status](/workflows/hexlet-check/badge.svg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l4st1m0za/frontend-project-lvl1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/l4st1m0za/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/l4st1m0za/frontend-project-lvl1#readme",
+  "type": "module",
+  "dependencies": {
+    "check-node-version": "^4.0.3",
+    "link": "^0.1.5"
+  },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
+}
