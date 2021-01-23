@@ -19,9 +19,15 @@
   "type": "module",
   "dependencies": {
     "check-node-version": "^4.0.3",
-    "link": "^0.1.5"
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "link": "^0.1.5",
+    "readline-sync": "^1.4.10"
   },
   "bin": {
     "brain-games": "bin/brain-games.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0"
   }
 }
