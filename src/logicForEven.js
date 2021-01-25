@@ -18,6 +18,9 @@ const foo = () => {
     } else if (ranNum1 % 2 === 0 && firstAnsw === 'no'){
         console.log(`'${firstAnsw}' is wrong answer ;(. Correct answer was 'yes'.`)
         return 'Let\'s try again, ' + userName;
+    } else if (firstAnsw !== 'yes' && firstAnsw !== 'no') {
+        console.log(`'${firstAnsw}' is wrong answer ;(. Correct answer was 'yes'.`)
+        return 'Let\'s try again, ' + userName;
     }
 
 
@@ -31,6 +34,9 @@ const foo = () => {
         console.log(`'${secondAnsw}' is wrong answer ;(. Correct answer was 'no'.`)
         return 'Let\'s try again, ' + userName
     } else if (ranNum2 % 2 === 0 && secondAnsw === 'no'){
+        console.log(`'${secondAnsw}' is wrong answer ;(. Correct answer was 'yes'.`)
+        return 'Let\'s try again, ' + userName;
+    } else if (secondAnsw !== 'yes' && secondAnsw !== 'no') {
         console.log(`'${secondAnsw}' is wrong answer ;(. Correct answer was 'yes'.`)
         return 'Let\'s try again, ' + userName;
     }
@@ -50,8 +56,10 @@ const foo = () => {
     } else if (ranNum3 % 2 === 0 && thirdAnsw === 'no'){
         console.log(`'${thirdAnsw}' is wrong answer ;(. Correct answer was 'yes'.`)
         return 'Let\'s try again, ' + userName;
+    } else if (thirdAnsw !== 'yes' && thirdAnsw !== 'no') {
+        console.log(`'${thirdAnsw}' is wrong answer ;(. Correct answer was 'yes'.`)
+        return 'Let\'s try again, ' + userName;
     }
-
 };
 
 export default foo;
