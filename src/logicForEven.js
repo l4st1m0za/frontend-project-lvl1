@@ -12,10 +12,13 @@ const foo = () => {
 
     if (ranNum1 % 2 !== 0 && firstAnsw === 'no' || ranNum1 % 2 === 0 && firstAnsw === 'yes') {
         console.log('Correct!')
-    } else {
+    } else if (ranNum1 % 2 !== 0 && firstAnsw === 'yes'){
         console.log(`'${firstAnsw}' is wrong answer ;(. Correct answer was 'no'.`)
         return 'Let\'s try again, ' + userName
-    };
+    } else if (ranNum1 % 2 === 0 && firstAnsw === 'no'){
+        console.log(`'${firstAnsw}' is wrong answer ;(. Correct answer was 'yes'.`)
+        return 'Let\'s try again, ' + userName;
+    }
 
 
     const ranNum2 = Math.floor((Math.random() * 10) + Math.random() * 10)
@@ -24,10 +27,13 @@ const foo = () => {
 
     if (ranNum2 % 2 !== 0 && secondAnsw === 'no' || ranNum2 % 2 === 0 && secondAnsw === 'yes') {
         console.log('Correct!')
-    } else {
+    } else if (ranNum2 % 2 !== 0 && secondAnsw === 'yes'){
         console.log(`'${secondAnsw}' is wrong answer ;(. Correct answer was 'no'.`)
         return 'Let\'s try again, ' + userName
-    };
+    } else if (ranNum2 % 2 === 0 && secondAnsw === 'no'){
+        console.log(`'${secondAnsw}' is wrong answer ;(. Correct answer was 'yes'.`)
+        return 'Let\'s try again, ' + userName;
+    }
 
 
     const ranNum3 = Math.floor((Math.random() * 10) + Math.random() * 10)
@@ -38,10 +44,13 @@ const foo = () => {
         console.log('Correct!')
         return `Congratulations, ` + userName + '!'
 
-    } else {
+    } else if (ranNum3 % 2 !== 0 && thirdAnsw === 'yes'){
         console.log(`'${thirdAnsw}' is wrong answer ;(. Correct answer was 'no'.`)
         return 'Let\'s try again, ' + userName
-    };
+    } else if (ranNum3 % 2 === 0 && thirdAnsw === 'no'){
+        console.log(`'${thirdAnsw}' is wrong answer ;(. Correct answer was 'yes'.`)
+        return 'Let\'s try again, ' + userName;
+    }
 
 };
 
